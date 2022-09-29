@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades;
-use League\CommonMark\Extension\Attributes\Node\Attributes;
 
 class RegisterController extends Controller
 {
@@ -23,9 +20,7 @@ class RegisterController extends Controller
             'password' => 'required|min:7|max:255'
         ]);
 
-        $user = User::create($attributes);
-
-        auth()->login($user);
+        auth()->login(User::create($attributes));
 
         return redirect('/')->with('success', 'Your account has been created.');
     }
