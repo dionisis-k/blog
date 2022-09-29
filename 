@@ -1,0 +1,14 @@
+=> [34;4mIlluminate\Database\Eloquent\Collection[39;24m {#4522
+     [34mall[39m: [
+       [34;4mApp\Models\Post[39;24m {#3909
+         [34mid[39m: [35m1[39m,
+         [34mtitle[39m: "[32mMy First Post[39m",
+         [34mexcerpt[39m: "[32mLorem Ipsum is simply dummy text of the printing and typesetting industry.[39m",
+         [34mbody[39m: "[32mLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.[39m",
+         [34mcreated_at[39m: "[32m2022-09-26 07:38:42[39m",
+         [34mupdated_at[39m: "[32m2022-09-26 07:38:42[39m",
+         [34mpublished_at[39m: [36mnull[39m,
+       },
+     ],
+   }
+
