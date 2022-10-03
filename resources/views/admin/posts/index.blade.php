@@ -17,22 +17,21 @@
                                             </div>
                                         </td>
 
-
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <span
-                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                                Published
-                                            </span>
-                                        </td>
-
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                             <a href="/admin/posts/{{ $post->id }}/edit" class="text-blue-500 hover:text-blue-600">Edit</a>
                                         </td>
+
+                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                            {{-- <a href="/admin/posts/{{ $post->id }}/delete" class="text-blue-500 hover:text-blue-600">Deete</a> --}}
+                                            <form method="POST" action="/admin/posts/{{ $post->id }}">
+                                                @csrf
+                                                @method('DELETE')
+
+                                                <button class="text-xs text-gray-400">Delete</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 @endforeach
-
-
-                                <!-- More people... -->
                             </tbody>
                         </table>
                     </div>

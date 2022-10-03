@@ -11,7 +11,7 @@
 <style>
     html {
         scroll-behavior: smooth;
-}
+    }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
@@ -94,6 +94,5 @@
         </footer>
     </section>
 
-    <x-flash />
-
+    <x-flash/>
 </body>
